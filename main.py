@@ -5,14 +5,10 @@ entertainments = ["watch a movie", "ride a horse and carriage", "go shopping", "
 
 import random
 
-# chosen_destination  = random.choice(destinations)
-# chosen_transportation  = random.choice(transportation)
-# chosen_entertainment  = random.choice(entertainment)
-# chosen_restaurent  = random.choice(restaurants)
-
 
 
 def user_destination(destination_list):
+    print("You have chosen Day Trip Generator to plan out your vaction! Sit back, relax, and let's get started!")
     not_satisfied = True
     while not_satisfied:
         chosen_destination = random.choice(destinations)
@@ -35,7 +31,6 @@ def user_transportation(transportation_list):
             not_satisfied = False
     return chosen_transportation
 
-# the_transportation = chosen_transportation
 
 def user_entertainment(entertainment_list):
     not_satisfied = True
@@ -47,7 +42,6 @@ def user_entertainment(entertainment_list):
             not_satisfied = False
     return chosen_entertainment
 
-# the_entertainment = chosen_entertainment
 
 def user_restaurent(restaurent_list):
     not_satisfied = True
@@ -59,7 +53,6 @@ def user_restaurent(restaurent_list):
             not_satisfied = False
     return chosen_restaurent
 
-# the_resaturant = chosen_restaurent
       
 
 def confirm_trip(destination, transportation, entertainment, restaurant):
@@ -73,7 +66,7 @@ def confirm_trip(destination, transportation, entertainment, restaurant):
     while not_satisfed:
         user_input = input("Would you like to confirm this trip? Enter yes/no: ")
         if user_input == "yes":
-            print(f"Your dream vaction just became reality! You'll be arriving to {the_destination} via {the_transportation}, where you day will be spent {the_entertainment}. You'll end your day dining at {the_restaurant}, the best in town. ")
+            print(f"Your dream vaction just became reality! You'll be arriving to {the_destination} via {the_transportation}, where your day will be spent {the_entertainment}. You'll end your day dining at {the_restaurant}, the best in town. ")
             not_satisfed = False
         
         
