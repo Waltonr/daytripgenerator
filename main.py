@@ -66,7 +66,7 @@ def confirm_trip(destination, transportation, entertainment, restaurant):
     while not_satisfed:
         user_input = input("Would you like to confirm this trip? Enter yes/no: ")
         if user_input == "yes":
-            print(f"Your dream vaction just became reality! You'll be arriving to {the_destination} via {the_transportation}, where your day will be spent {the_entertainment}. You'll end your day dining at {the_restaurant}, the best in town. ")
+            print(f"Your dream vaction just became reality! You'll be arriving to {the_destination} via {the_transportation}, where yourn day will be spent {the_entertainment}. You'll end your day dining at {the_restaurant}, the best in town. ")
             not_satisfed = False
         
         
